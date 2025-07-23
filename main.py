@@ -7,7 +7,7 @@ import os
 
 
 TOKEN = os.getenv('BOT_TOKEN')
-bot = telebot.TeleBot(BOT_TOKEN)
+bot = telebot.TeleBot(TOKEN)
 
 user_tasks = {}
 user_names = {}
