@@ -6,8 +6,8 @@ from datetime import datetime, timedelta
 import os
 
 
-TOKEN = os.getenv('8013223098:AAHWhohDvSrMKemVqamReYoWpnvH-4SwNMY')
-bot = telebot.TeleBot(TOKEN)
+TOKEN = os.getenv('BOT_TOKEN')
+bot = telebot.TeleBot(BOT_TOKEN)
 
 user_tasks = {}
 user_names = {}
