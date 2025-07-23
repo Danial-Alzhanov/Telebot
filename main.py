@@ -3,8 +3,10 @@ import schedule
 import time
 import threading
 from datetime import datetime, timedelta
+import os
 
-TOKEN = 'твой_токен'
+
+TOKEN = os.getenv('8013223098:AAHWhohDvSrMKemVqamReYoWpnvH-4SwNMY')
 bot = telebot.TeleBot(TOKEN)
 
 user_tasks = {}
@@ -127,4 +129,4 @@ schedule.every(60).seconds.do(check_deadlines)
 
 threading.Thread(target=schedule_checker).start()
 
-bot.polling()
+bot.polling(none_stop=True)
